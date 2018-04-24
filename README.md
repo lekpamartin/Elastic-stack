@@ -8,6 +8,7 @@ Suite ELK
 <h3>Beats</h3>
 
 <h3>Elasticsearch</h3>
-Une présentation du produit est disponible dans le <a href='https://github.com/lekpamartin/Elastic-stack/wiki/Elasticsearch'>wiki associé</a>
+Une présentation/configuration du produit est disponible dans le <a href='https://github.com/lekpamartin/Elastic-stack/wiki/Elasticsearch'>wiki associé</a>
 
 <h3>Kibana</h3>
+Une présentation/configuration du produit est disponible dans le <a href='https://github.com/lekpamartin/Elastic-stack/wiki/Kibana'>wiki associé</a>
