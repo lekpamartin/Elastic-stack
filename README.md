@@ -16,4 +16,4 @@ Il s'agit de la couche chargée du traitement/indexation des données. Une prés
 Il s'agit de la couche chargée de l'affichage des données. Une présentation/configuration du produit est disponible dans le <a href='https://github.com/lekpamartin/Elastic-stack/wiki/Kibana'>wiki associé</a>
 
 ### More info
-- Secure kibana with keycloak : https://github.com/aboullaite/kibana-keycloak
+- [Docker] Secure kibana with keycloak : https://github.com/aboullaite/kibana-keycloak
