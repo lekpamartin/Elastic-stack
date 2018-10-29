@@ -62,7 +62,7 @@ close_open() {
 			echo "Aborted by user"
 		fi
 	else
-		LIST=`$CURL "${ELASTICURL}/_cat/indices?v&s=store.size:asc&h=index" | grep -wE "^$OPTIONS"`
+		LIST=`$CURL "${ELASTICURL}/_cat/indices/$OPTIONS?v&s=store.size:asc&h=index"`
 		echo -en "\nConfirm $ACTION for $OPTIONS correponding to indices \n\n${LIST}\n\n [y/n] : "
 		read CONFIRM
 		if [ $CONFIRM == "y" ]; then
@@ -91,7 +91,7 @@ indices_list_status_size() {
 		$CURL "${ELASTICURL}/_cat/indices$PARAMS"
 		EXIT=$?
 	else
-		$CURL "${ELASTICURL}/_cat/indices$PARAMS" | grep -wE -- "^$OPTIONS"
+		$CURL "${ELASTICURL}/_cat/indices/$OPTIONS$PARAMS"
 		EXIT=$?
 	fi
 }
