@@ -1,0 +1,26 @@
+{
+	"_comment": "Default delay",
+	"delay": "5 weeks ago",
+	"index": {,
+		"index1": [{
+				"field": "name",
+				"value": ["value1", "value2"]
+			},
+			{
+				"_comment": "Specific delay",
+				"delay": "2 weeks ago",
+				"field": "name2",
+				"value": ["value1", "value2", "value3"]
+			}
+		],
+		"index2": [{
+				"field": "name1",
+				"value": ["value1", "value2", "value3"]
+			},
+			{
+				"field": "name2",
+				"value": ["value1"]
+			}
+		]
+	}
+}
