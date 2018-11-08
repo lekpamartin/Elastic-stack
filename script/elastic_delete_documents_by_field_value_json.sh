@@ -6,12 +6,12 @@
 #CURL="curl -s --cacert /REP/CA.cer"
 CURL="curl -s -k"
 
-JSON=`cat $(dirname $0)/elastic_delete_documents.json`
+JSON=`cat $(dirname $0)/elastic_delete_documents_by_field_value_json.json`
 
 if jq -e . >/dev/null 2>&1 <<<"$JSON"; then
 	echo "Parsed JSON successfully and got something other than false/null"
 else
-	echo -e "\n\tFailed to parse JSON ($(dirname $0)/elastic_delete_documents.json), or got false/null\n"
+	echo -e "\n\tFailed to parse JSON ($(dirname $0)/elastic_delete_documents.json) with jq, or got false/null\n"
 	exit 1
 fi
 
