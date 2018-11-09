@@ -1,7 +1,7 @@
 {
 	"_comment": "Default delay",
 	"delay": "5 weeks ago",
-	"index": {,
+	"index": {
 		"index1": [{
 				"field": "name",
 				"value": ["value1", "value2"]
