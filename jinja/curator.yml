@@ -1,0 +1,13 @@
+{%- if 'client' in curator.keys() -%}
+client:
+{%- for key, value in curator.client.items() %}
+  {{ key }}: {{ value }}
+{%- endfor %}
+{%- endif %}
+
+{% if 'logging' in curator.keys() -%}
+logging:
+{%- for key, value in curator.logging.items() %}
+  {{ key }}: {{ value }}
+{%- endfor -%}
+{%- endif -%}
