@@ -13,9 +13,9 @@ actions:
 {%- for subkey in value  %}
 {%- for subsubkey, subsubvalue in subkey.items()  %}
 {%- if loop.index == 1  %}
-        - {{ subsubkey }}: {{ subsubvalue }}
+      - {{ subsubkey }}: {{ subsubvalue }}
 {%- else %}
-          {{ subsubkey }}: {{ subsubvalue }}
+        {{ subsubkey }}: {{ subsubvalue }}
 {%- endif %}
 {%- endfor %}
 {%- endfor %}
