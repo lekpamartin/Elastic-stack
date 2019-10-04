@@ -1,0 +1,29 @@
+{%- if 'actions' in curator.keys() -%}
+actions:
+{%- for element in curator.actions %}
+  {{ loop.index }}:
+{%- for key, value in element.items()  %}
+{%- if key in ('options')  %}
+    options:
+{%- for subkey, subvalue in value.items()  %}
+      {{ subkey }}: {{ subvalue }}
+{%- endfor %}
+{%- elif key in ('filters')  %}
+    filters:
+{%- for subkey in value  %}
+{%- for subsubkey, subsubvalue in subkey.items()  %}
+{%- if loop.index == 1  %}
+        - {{ subsubkey }}: {{ subsubvalue }}
+{%- else %}
+          {{ subsubkey }}: {{ subsubvalue }}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
+{%- else %}
+    {{ key }}: {{ value }}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
+{%- else %}
+
+{%- endif %}
